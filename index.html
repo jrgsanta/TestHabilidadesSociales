@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test de Habilidades Sociales</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Test de Habilidades Sociales</h1>
+
+  <!-- Sección para seleccionar el número de preguntas -->
+  <div id="inicio">
+    <label for="numPreguntas">Seleccione el número de preguntas:</label>
+    <select id="numPreguntas">
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select>
+    <button id="btnComenzar">Comenzar</button>
+  </div>
+
+  <!-- Sección donde se mostrarán las preguntas -->
+  <div id="testContainer" class="oculto">
+    <div id="preguntaContainer"></div>
+    <button id="btnSiguiente">Siguiente</button>
+  </div>
+
+  <!-- Sección para mostrar resultados finales -->
+  <div id="resultadoContainer" class="oculto">
+    <h2>Resultados</h2>
+    <p id="puntuacion"></p>
+    <div id="errores"></div>
+    <button id="btnReiniciar">Reiniciar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
